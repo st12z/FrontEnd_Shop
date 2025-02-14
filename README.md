@@ -2,7 +2,10 @@
 
 Dự án này là một ứng dụng thương mại điện tử được xây dựng bằng **ReactJS**. Dưới đây là các tính năng chính và các công nghệ mà dự án sử dụng.
 
-
+## Trang home
+![Trang Home](./src/images/homepage.png)
+## Trang admin
+![Trang Admin](./src/images/adminpage.png)
 
 ## Các công nghệ sử dụng
 
