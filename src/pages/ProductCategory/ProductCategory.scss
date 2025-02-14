@@ -1,0 +1,52 @@
+.category{
+  background-color: #E9EFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  &__item{
+      color: black;
+      font-weight: 600;
+      background-color: #ddd;
+      padding: 15px 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    &--selected{
+      background-color: red;
+    }
+  }
+}
+.hidden{
+  display: none;
+}
+.selected{
+  background-color: #00483D;
+  color: white;
+}
+.product{
+  &__sort{
+    ul{
+      display:flex;
+      align-items: center;
+      padding: 0;
+      background-color: #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      .title{
+        font-size: 14px;
+      }
+      li{
+        list-style-type: none;
+        margin-right: 10px;
+        font-size: 14px;
+        button{
+          padding-left: 50px;
+          padding-right: 50px;
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

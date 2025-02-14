@@ -1,0 +1,22 @@
+.product{
+  &__category{
+    display:flex;
+    justify-content: flex-end;
+    ul{
+      display:flex;
+      li{
+        list-style-type: none;
+        margin-right: 20px;
+        display:inline-block;
+        background-color: #ddd;
+        padding: 10px;
+        border-radius: 10px;
+        a{
+          text-decoration: none;
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

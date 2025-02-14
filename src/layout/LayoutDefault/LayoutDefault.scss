@@ -1,0 +1,122 @@
+
+// CSS container
+.container{
+  margin-top: 20px;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding:0 15px;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+}
+
+.layout{
+  background-color:#FFEBC1 ;
+}
+.header{
+  padding: 20px;
+  background-color: red;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  &__search{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    &__input{
+      form{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        padding-top:10px;
+        .icon-search{
+          position: absolute;
+          right: 0px;
+          top: 40%;
+          transform: translateY(-50%);
+          font-size: 18px;
+        }
+      }
+    }
+    &__item{
+      display:flex;
+      position: absolute;
+      top: 42%;
+      right: 0;
+      z-index: 1;
+      height: 500px;
+      overflow-y:auto;
+      ul{
+        li{
+          list-style-type: none;
+          padding: 10px;
+          background-color: white;
+          border-bottom: 1px solid #ddd;
+          width: 500px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+    }
+  }
+  &__menu{
+    
+    ul{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      li{
+        list-style: none;
+        margin-right: 10px;
+        font-size: 20px;
+        color:white;
+        a{
+          text-decoration: none;
+          color:white;
+        }
+      }
+    }
+  }
+}
+// CSS Banner
+.banner{
+  &__right{
+    display:flex;
+    flex-direction: column;
+  
+  }
+  &__left{
+    display:flex;
+    justify-content: flex-end;
+    background-color: #E9EFFF;
+    text-align: right;
+    border-radius: 10px;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+.menu{
+  &__item{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  &__content{
+    a{
+      text-decoration: none;
+      color:black;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
