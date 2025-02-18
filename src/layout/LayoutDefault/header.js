@@ -6,7 +6,8 @@ import {SearchOutlined,
   FormOutlined,
   LogoutOutlined,
   ContainerOutlined,
-  WechatOutlined
+  WechatOutlined,
+  SketchOutlined
 } from "@ant-design/icons";
 import {Link, NavLink, useNavigate} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -179,7 +180,14 @@ function Header(){
                 </a>
               </li>
               {isLogin ? (
+                
                 <>
+                  <li>
+                    <a href="/discounts">
+                      <SketchOutlined  style={{marginRight:"10px",fontSize:"20px"}}/>
+                      <span>Vourcher giảm giá</span>
+                    </a>
+                  </li>
                   {roles && roles.length>0&& roles.includes("USER") && (
                     <li>
                     <a href="/chats" >
@@ -191,6 +199,7 @@ function Header(){
                   <li>
                     <DropDownUser user={user}/>
                   </li>
+                  
                 </>
                   
                 )

@@ -33,6 +33,11 @@ import Chat from "../pages/Chat";
 import AdminChats from "../pages/Admin/AdminChats";
 import RoomChatsAdmin from "../pages/Admin/RoomChatsAdmin";
 
+import CreateDiscount from "../pages/Admin/CreateDiscount";
+import ManageDiscount from "../pages/Admin/ManageDiscount";
+import EditDiscount from "../pages/Admin/EditDiscount";
+import Discount from "../pages/Discount";
+
 export const routes=[
   {
     path:"/",
@@ -105,6 +110,10 @@ export const routes=[
       {
         path:"/chats",
         element:<Chat/>
+      },
+      {
+        path:"/discounts",
+        element: <Discount/>
       }
       
     ]
@@ -168,6 +177,18 @@ export const routes=[
       {
         path:"chats/:roomId",
         element: <RoomChatsAdmin/>
+      },
+      {
+        path:"manage-discounts",
+        element:<ManageDiscount />
+      },
+      {
+        path:"create-discount",
+        element:<CreateDiscount/>
+      },
+      {
+        path:"edit-discount/:id",
+        element:<EditDiscount/>
       }
     ]
   },

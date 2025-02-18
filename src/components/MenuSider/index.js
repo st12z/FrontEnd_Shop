@@ -5,6 +5,7 @@ import { AppstoreOutlined,UserOutlined,
     SettingOutlined,
     HomeOutlined,
     PicCenterOutlined,
+    SketchOutlined
    } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -83,6 +84,23 @@ function MenuSider(){
       key:"/admin/manage-review",
       label:<Link to="/admin/manage-review">Quản lý đánh giá</Link>,
       icon:<CommentOutlined />,
+    },
+    {
+      key:"/admin/manage-discounts",
+      label: <Link to="/admin/manage-discounts">Quản lý phiếu giảm giá</Link>,
+      icon:<SketchOutlined  />,
+      children:[
+        { 
+          key:"/admin/manage-discounts",
+          label:<Link to="/admin/manage-discounts">Quản lý mã sản phẩm</Link>,
+        },
+        {
+           
+          key:"/admin/create-discount",
+          label:<Link to="/admin/create-discount">Tạo mới phiếu giảm giá</Link>,
+          
+        }
+      ]
     },
    ...(roles.length>0 && roles.includes("ADMIN") || roles.includes("MANAGER") ? [
     {
